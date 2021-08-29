@@ -9,10 +9,28 @@ public class PersonFrom {
     String imNotMapped;
     LevelFrom level;
 
+    NameFrom name;
+
     List<String> list = new ArrayList<>();
+    List<Integer> numberList = new ArrayList<>();
+    List<NameFrom> nameList = new ArrayList<>();
     ArrayList<String> list2 = new ArrayList<>();
 
-    List<NameFrom> nameList = new ArrayList<>();
+    public NameFrom getName() {
+        return name;
+    }
+
+    public void setName(NameFrom name) {
+        this.name = name;
+    }
+
+    public List<Integer> getNumberList() {
+        return numberList;
+    }
+
+    public List<NameFrom> getNameList() {
+        return nameList;
+    }
 
     public String getImNotMapped() {
         return imNotMapped;
@@ -36,10 +54,6 @@ public class PersonFrom {
 
     public List<String> getList2() {
         return list2;
-    }
-
-    public List<NameFrom> getNameList() {
-        return nameList;
     }
 
     public LevelFrom getLevel() {

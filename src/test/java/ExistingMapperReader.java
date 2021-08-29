@@ -39,7 +39,7 @@ public class ExistingMapperReader {
                         customCodeMap.put(ref.lastFromTo, ref.customCode);
                     }
                 } else {
-                    ref.customCode += "\n" + s;
+                    ref.customCode += (ref.customCode != null && ref.customCode.equals("") ? "" : "\n") + s;
                 }
             });
             return customCodeMap;

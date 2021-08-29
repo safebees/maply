@@ -4,6 +4,15 @@ public class NameTo2 {
 
     String s1;
     Integer einInteger;
+    boolean einBoolean;
+
+    public boolean isEinBoolean() {
+        return einBoolean;
+    }
+
+    public void setEinBoolean(boolean einBoolean) {
+        this.einBoolean = einBoolean;
+    }
 
     public String getS1() {
         return s1;
