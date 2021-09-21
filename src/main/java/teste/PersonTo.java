@@ -8,11 +8,25 @@ public class PersonTo {
     String s1;
     LevelTo level;
 
+    NameTo name;
 
     List<String> list = new ArrayList<>();
+    List<Integer> integerList = new ArrayList<>();
+    List<Long> numberList = new ArrayList<>();
+    List<NameTo> nameList = new ArrayList<>();
     ArrayList<String> list2 = new ArrayList<>();
 
-    List<NameTo> nameList = new ArrayList<>();
+    public NameTo getName() {
+        return name;
+    }
+
+    public void setName(NameTo name) {
+        this.name = name;
+    }
+
+    public List<Long> getNumberList() {
+        return numberList;
+    }
 
     public String getS1() {
         return s1;

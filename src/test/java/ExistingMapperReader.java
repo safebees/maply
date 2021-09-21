@@ -1,17 +1,9 @@
 import org.apache.commons.lang3.StringUtils;
 
-import java.beans.IntrospectionException;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.lang.reflect.ParameterizedType;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 
@@ -39,7 +31,7 @@ public class ExistingMapperReader {
                         customCodeMap.put(ref.lastFromTo, ref.customCode);
                     }
                 } else {
-                    ref.customCode += "\n" + s;
+                    ref.customCode += (ref.customCode != null && ref.customCode.equals("") ? "" : "\n") + s;
                 }
             });
             return customCodeMap;

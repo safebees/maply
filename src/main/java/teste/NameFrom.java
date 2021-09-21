@@ -4,7 +4,15 @@ public class NameFrom {
 
     String s1;
     int einInteger;
+    boolean einBoolean;
 
+    public boolean isEinBoolean() {
+        return einBoolean;
+    }
+
+    public void setEinBoolean(boolean einBoolean) {
+        this.einBoolean = einBoolean;
+    }
 
     public String getS1() {
         return s1;
